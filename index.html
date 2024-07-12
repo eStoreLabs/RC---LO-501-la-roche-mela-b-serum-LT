@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mela SERUM B3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.typekit.net/cnc6cbd.css" />
+  <style>
+    @import url("https://use.typekit.net/cnc6cbd.css");
+
+    :root {
+      --es-blue-accent: #009fe3;
+    }
+
+    /* Locator Web Light */
+    @font-face {
+      font-family: "LocatorWeb";
+      src: url("./assets/fonts/LocatorWebLight/LocatorWebLight.eot");
+      src: url("./assets/fonts/LocatorWebLight/LocatorWebLight.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/LocatorWebLight/LocatorWebLight.woff2") format("woff2"), url("./assets/fonts/LocatorWebLight/LocatorWebLight.woff") format("woff");
+      font-weight: 200;
+      font-style: normal;
+    }
+
+    /* Locator Web Medium */
+    @font-face {
+      font-family: "LocatorWeb";
+      src: url("./assets/fonts/LocatorWebMedium/LocatorWebMedium.eot");
+      src: url("./assets/fonts/LocatorWebMedium/LocatorWebMedium.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/LocatorWebMedium/LocatorWebMedium.woff2") format("woff2"), url("./assets/fonts/LocatorWebMedium/LocatorWebMedium.woff") format("woff");
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @keyframes slidedown {
+      from {
+        opacity: 0;
+        transform: translateY(-32px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideright {
+      from {
+        opacity: 0.3;
+        transform: translateX(-100px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideleft {
+      from {
+        opacity: 0.3;
+        transform: translateX(100px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    /* results section */
+    /* ingredients section */
+    /* usage instructions section */
+    /* usage routine (fancy) section */
+    /* obligations section */
+    #la-roche.la-roche {
+      font-family: Montserrat, sans-serif;
+      font-size: 18px;
+      font-weight: 200;
+      line-height: 1.2;
+      max-width: 998px;
+      margin: 0 auto;
+      padding: 0;
+      overflow: hidden;
+      color: #fff;
+      background: #000;
+    }
+
+    #la-roche.la-roche img {
+      max-width: 100%;
+    }
+
+    #la-roche.la-roche sup {
+      vertical-align: top;
+      font-size: 1rem;
+    }
+
+    #la-roche.la-roche p>sup {
+      font-size: 0.6rem;
+    }
+
+    #la-roche.la-roche span>sup {
+      font-size: 0.8em;
+    }
+
+    #la-roche.la-roche .es-kv {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      position: relative;
+      background-color: #000;
+    }
+
+    #la-roche.la-roche .es-kv__header {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-around;
+      padding-bottom: 10px;
+      background-color: #fff;
+    }
+
+    #la-roche.la-roche .es-kv__brand {
+      animation: slidedown 0.6s ease forwards;
+      animation-delay: 0.3s;
+      max-width: 222px;
+      height: 100%;
+    }
+
+    #la-roche.la-roche .es-kv__logo {
+      margin-top: 10px;
+      max-width: 250px;
+      animation: slideleft 0.6s ease forwards;
+    }
+
+    #la-roche.la-roche .es-kv__content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      padding-top: 0;
+      animation: slideright 0.6s ease forwards;
+    }
+
+    #la-roche.la-roche .es-kv__text {
+      text-align: right;
+      padding-right: 20px;
+      padding-top: 25px;
+    }
+    #la-roche.la-roche .es-kv__photo {
+      max-width: 300px;
+    }
+
+    #la-roche.la-roche .es-kv__title {
+      font-size: clamp(1.125rem, 0.9167rem + 0.6667vw, 1.5rem);
+      text-transform: uppercase;
+      margin-bottom: 0;
+      font-weight: 300;
+    }
+
+    #la-roche.la-roche .es-kv__title span {
+      color: #fff;
+    }
+
+    #la-roche.la-roche .es-kv__packshot img {
+      max-width: 350px;
+      transition: 500ms ease-in-out;
+    }
+
+    #la-roche.la-roche .es-kv__packshot img:hover {
+      scale: 1.3;
+    }
+
+    #la-roche.la-roche .es-effects {
+      padding-top: 20px;
+      padding-bottom: 50px;
+      background-image: url("assets/img/effects-bg.png");
+      background-repeat: no-repeat;
+      background-position: center right;
+      background-size: initial;
+    }
+
+    #la-roche.la-roche .es-effects__title {
+      font-size: clamp(1.2rem, 1.1222rem + 0.8889vw, 1.8rem);
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+
+    #la-roche.la-roche .es-effects__icons {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      align-content: center;
+      gap: 5ch;
+    }
+
+    #la-roche.la-roche .es-effects__single {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: flex-start;
+      flex-basis: 12ch;
+    }
+
+    #la-roche.la-roche .es-effects__single img {
+      max-width: 40px;
+    }
+
+    #la-roche.la-roche .es-effects__text {
+      text-align: center;
+      font-size: 0.8rem;
+      font-family: Montserrat, sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    #la-roche.la-roche .es-features {
+      background-color: #4d237f;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    #la-roche.la-roche .es-features__content {
+      max-width: 500px;
+      margin: 0 auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    #la-roche.la-roche .es-features__title {
+      text-transform: uppercase;
+      font-size: clamp(1rem, 1.1222rem + 0.8889vw, 1.8rem);
+      text-align: center;
+      font-weight: 400;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    #la-roche.la-roche .es-features__logo {
+      display: block;
+      max-width: 70%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    #la-roche.la-roche .es-features__disclaimer {
+      font-weight: 700;
+      font-size: 10px;
+      position: relative;
+      top: -41px;
+      left: 169px;
+      z-index: 100;
+    }
+
+    #la-roche.la-roche .es-features__label-description {
+      display: block;
+      max-width: 350px;
+      margin: 0 auto;
+      padding: 10px 15px;
+      background-color: #fff;
+      color: #4d237f;
+      font-family: Montserrat, sans-serif;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    #la-roche.la-roche .es-features__description {
+      font-family: Montserrat, sans-serif;
+      font-weight: 300;
+      font-size: 12px;
+      text-align: center;
+      line-height: 1.2;
+    }
+
+  
+
+    #la-roche.la-roche .es-results {
+      background-color: #4d237f;
+      padding: 2rem;
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: 30%;
+      color: #fff;
+      transition: background-size 300ms ease-in-out;
+    }
+
+    #la-roche.la-roche .es-results__title {
+      text-transform: uppercase;
+      font-size: clamp(1rem, 1.1222rem + 0.8889vw, 1.8rem);
+      line-height: 1;
+      max-width: 25ch;
+      margin: auto;
+      margin-bottom: 40px;
+    }
+
+    #la-roche.la-roche .es-results__content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 475px;
+    }
+
+    #la-roche.la-roche .es-results__single {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    #la-roche.la-roche .es-results__single::before {
+      display: inline-block;
+      align-self: flex-start;
+      margin-right: 10px;
+      height: 30px;
+      min-width: 40px;
+      content: "";
+      background: url("assets/img/check-icon.png") no-repeat 0 0;
+      background-size: 25px 25px;
+    }
+
+    #la-roche.la-roche .es-results__single span {
+      font-weight: bold;
+      font-size: 4.3rem;
+    }
+
+    #la-roche.la-roche .es-results__single strong {
+      display: block;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+    }
+
+    #la-roche.la-roche .es-results__text {
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.5;
+      margin: 0;
+      text-transform: none;
+    }
+
+    #la-roche.la-roche .es-ingr {
+      padding-top: 40px;
+    }
+
+    #la-roche.la-roche .es-ingr__title {
+      margin-top: 0;
+      margin-bottom: 40px;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: clamp(1rem, 1.1222rem + 0.8889vw, 1.8rem);
+    }
+
+    #la-roche.la-roche .es-ingr__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    #la-roche.la-roche .es-ingr__single {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      flex-basis: 214px;
+    }
+
+    #la-roche.la-roche .es-ingr__single:last-child {
+      margin-bottom: 3rem;
+    }
+
+    #la-roche.la-roche .es-ingr__main {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      height: 240px;
+      padding: 0.5rem;
+      transition: background-size 300ms ease-in-out;
+    }
+
+    #la-roche.la-roche .es-ingr__main:hover {
+      background-size: 105%;
+    }
+
+    #la-roche.la-roche .es-ingr__main--1 {
+      background-image: url("assets/img/ingr-1.png");
+    }
+
+    #la-roche.la-roche .es-ingr__main--2 {
+      background-image: url("assets/img/ingr-2.png");
+    }
+
+    #la-roche.la-roche .es-ingr__main--3 {
+      background-image: url("assets/img/ingr-3.png");
+    }
+
+    #la-roche.la-roche .es-ingr__main--4 {
+      background-image: url("assets/img/ingr-4.png");
+    }
+
+    #la-roche.la-roche .es-ingr__main--5 {
+      background-image: url("assets/img/ingr-5.png");
+    }
+
+    #la-roche.la-roche .es-ingr__main--6 {
+      background-image: url("assets/img/ingr-6.png");
+    }
+
+    #la-roche.la-roche .es-ingr__name {
+      text-transform: uppercase;
+      font-weight: 900;
+      margin-top: 4rem;
+      font-size: clamp(1rem, 0.8958rem + 0.3333vw, 1.1875rem);
+      transition: 0.4s ease-in-out;
+    }
+
+    #la-roche.la-roche .es-ingr__desc {
+      font-size: 14px;
+      font-weight: 400;
+      font-family: Montserrat, sans-serif;
+    }
+
+    #la-roche.la-roche .es-effect {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      background-image: url("assets/img/effect-bg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: -419px 7px;
+    }
+
+    #la-roche.la-roche .es-effect__title {
+      text-transform: uppercase;
+      font-family: Montserrat, sans-serif;
+      font-weight: 400;
+      font-size: clamp(1rem, 1.1222rem + 0.8889vw, 1.8rem);
+      text-align: center;
+    }
+
+    #la-roche.la-roche .es-effect__title span {
+      color: #ad75e3;
+      font-weight: bold;
+    }
+
+    #la-roche.la-roche .es-effect__list {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    #la-roche.la-roche .es-effect__item {
+      min-width: 90%;
+    }
+
+    #la-roche.la-roche .es-effect__item-title {
+      font-family: Montserrat, sans-serif;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 0;
+      color: #4d237f;
+      background: #fff;
+    }
+
+    #la-roche.la-roche .es-effect__item-title--light {
+      font-weight: 300;
+      font-size: 20px !important;
+    }
+
+    #la-roche.la-roche .es-effect__before-title {
+      font-size: 16px;
+    }
+
+    #la-roche.la-roche .es-effect__item-description {
+      font-family: Montserrat, sans-serif;
+      font-size: 14px;
+      text-align: center;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    #la-roche.la-roche .es-effect__image-wrap {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    #la-roche.la-roche .es-effect__image {
+      display: block;
+      margin: 0 auto;
+    }
+
+    #la-roche.la-roche .es-effect__image-labels {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #la-roche.la-roche .es-use {
+      background-color: #4d237f;
+    }
+
+    #la-roche.la-roche .es-use__content {
+      padding: 1.5rem;
+    }
+
+    #la-roche.la-roche .es-use__title {
+      margin-bottom: 26px;
+      font-size: clamp(1rem, 1.1222rem + 0.8889vw, 1.8rem);
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-top: 0;
+    }
+
+    #la-roche.la-roche .es-use ol {
+      list-style: none;
+      counter-reset: my-counter;
+      max-width: 382px;
+      font-size: 13px;
+      margin-left: -30px;
+    }
+
+    #la-roche.la-roche .es-use ol li {
+      counter-increment: my-counter;
+      margin-bottom: 1.5em;
+      padding: 0 0 0 1em;
+      line-height: 1.4;
+    }
+
+    #la-roche.la-roche .es-use ol li::marker {
+      content: counter(my-counter) ".";
+      font-size: 0.8rem;
+      font-family: Montserrat, sans-serif;
+      font-weight: bold;
+    }
+
+    #la-roche.la-roche .es-cross {
+      margin: 0 0 50px 0;
+      background-image: url("assets/img/bg-routine-min.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 41% top;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      position: relative;
+      min-height: 820px;
+    }
+
+    #la-roche.la-roche .es-cross:nth-child(2) {
+      align-self: flex-start;
+    }
+
+    #la-roche.la-roche .es-cross__main-title {
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 50px 0;
+      font-size: clamp(1rem, 0.9222rem + 0.9889vw, 5.7rem);
+    }
+
+    #la-roche.la-roche .es-cross__single {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      align-items: center;
+      width: 50%;
+      max-height: 400px;
+      position: absolute;
+      text-align: left;
+    }
+
+    #la-roche.la-roche .es-cross__single img {
+      max-width: 100%;
+      max-height: 100%;
+      height: 500px;
+      transition: 0.4s ease-in-out;
+    }
+
+    #la-roche.la-roche .es-cross__single:hover img {
+      transform: scale(1.05);
+    }
+
+    #la-roche.la-roche .es-cross__single:hover {
+      color: var(--es-blue-accent);
+      background-color: #fff;
+      outline: 2.5px solid var(--es-blue-accent);
+    }
+
+    #la-roche.la-roche .es-cross__single--1 {
+      top: 0;
+      left: 100px;
+      z-index: 10;
+    }
+
+    #la-roche.la-roche .es-cross__single--1 img {
+      height: 500px;
+    }
+
+    #la-roche.la-roche .es-cross__single--2 {
+      top: 200px;
+      right: 36px;
+      z-index: 11;
+    }
+
+    #la-roche.la-roche .es-cross__single--2 img {
+      height: 300px;
+    }
+
+    #la-roche.la-roche .es-cross__single--3 {
+      bottom: 40px;
+      left: 69px;
+    }
+
+    #la-roche.la-roche .es-cross__single--3 img {
+      height: 375px;
+    }
+
+    #la-roche.la-roche .es-cross__name {
+      max-width: 16ch;
+      font-size: 18px;
+      margin-top: 0;
+      padding-top: 0;
+      text-transform: uppercase;
+    }
+
+    #la-roche.la-roche .es-cross__number {
+      color: #ad75e3;
+      font-weight: bold;
+      font-size: clamp(4.375rem, 1.5972rem + 8.8889vw, 9.375rem);
+      margin: 0;
+      padding: 0;
+    }
+
+    #la-roche.la-roche .es-cross__desc {
+      font-size: 16px;
+      text-transform: none;
+      max-width: 16ch;
+      font-family: Montserrat, sans-serif;
+      font-weight: 200;
+    }
+
+    #la-roche.la-roche .es-cross__link {
+      padding: 5px 10px;
+      background-color: #ad75e3;
+      color: #fff;
+      text-decoration: none;
+      font-size: 12px;
+      margin: 20px 0;
+      text-transform: none;
+      transition: 0.5s ease;
+    }
+
+    #la-roche.la-roche .es-obligations {
+      margin-top: 100px;
+    }
+
+    #la-roche.la-roche .es-obligations__title {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 30px;
+    }
+
+    #la-roche.la-roche .es-obligations__ctn {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #la-roche.la-roche .es-obligations__single {
+      width: 45%;
+      min-width: 350px;
+      height: 200px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: flex-end;
+      margin: 3.5px;
+    }
+
+    #la-roche.la-roche .es-obligations__single--1 {
+      background-image: url("assets/img/obligations-bg-1.png");
+    }
+
+    #la-roche.la-roche .es-obligations__single--2 {
+      background-image: url("assets/img/obligations-bg-2.png");
+    }
+
+    #la-roche.la-roche .es-obligations__single--3 {
+      background-image: url("assets/img/obligations-bg-3.png");
+    }
+
+    #la-roche.la-roche .es-obligations__single--4 {
+      background-image: url("assets/img/obligations-bg-4.png");
+    }
+
+    #la-roche.la-roche .es-obligations__text {
+      color: #fff;
+      text-transform: uppercase;
+      text-shadow: 2px -1px 19px rgb(66, 68, 90);
+      padding: 10px;
+      font-weight: bolder;
+      margin-bottom: 5px;
+      font-size: 15px;
+    }
+
+    #la-roche.la-roche .es-footer {
+      margin: 50px 0;
+      margin-bottom: 0;
+    }
+
+    #la-roche.la-roche .es-footer__text {
+      text-align: center;
+      margin: 0;
+      font-size: 10px;
+    }
+
+    @media screen and (min-width: 600px) {
+      #la-roche.la-roche .es-results {
+        padding: 4rem 0 4rem 20rem;
+        background-image: url("assets/img/mela-b3.png");
+        background-size: cover;
+        background-position: 0;
+      }
+
+      #la-roche.la-roche .es-ingr__container {
+        max-width: 80%;
+        margin: 0 auto;
+        gap: 10px;
+        justify-content: center;
+      }
+
+      #la-roche.la-roche .es-ingr {
+        background-image: url("assets/img/es-ing-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+      }
+
+      #la-roche.la-roche .es-cross__bg {
+        background-image: url("assets/img/cross-bg.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left -875px;
+      }
+
+      #la-roche.la-roche .es-features__logo {
+        max-width: 65%;
+      }
+
+      #la-roche.la-roche .es-obligations {
+        margin-top: 150px;
+        background-image: url("assets/img/footer-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        padding-bottom: 50px;
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      #la-roche.la-roche .es-cross__mainTitle {
+        margin-bottom: unset;
+      }
+
+      #la-roche.la-roche .es-cross {
+        background-image: none;
+        width: 100%;
+        display: flex;
+      }
+
+      #la-roche.la-roche .es-cross__single {
+        position: static;
+        width: 95vw;
+        text-align: left;
+        padding-right: 10px;
+      }
+
+      #la-roche.la-roche .es-cross__single img {
+        max-width: 20%;
+        height: auto;
+      }
+
+      #la-roche.la-roche .es-cross__name {
+        text-align: left;
+      }
+
+      #la-roche.la-roche .es-cross__single--2 {
+        margin: 5rem 0 2rem 0;
+        text-align: right;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      #la-roche.la-roche .es-kv {
+        background-position: 40% 80%;
+        background-size: 150%;
+      }
+
+      #la-roche.la-roche .es-kv__brand {
+        width: 200px;
+        left: 15%;
+      }
+
+      #la-roche.la-roche .es-kv__content {
+        margin-top: 50px;
+      }
+
+      #la-roche.la-roche .es-kv__title {
+        text-align: center;
+      }
+
+      #la-roche.la-roche .es-kv__claim {
+        text-align: center;
+      }
+
+      #la-roche.la-roche .es-use__content {
+        max-width: 100%;
+      }
+    }
+
+    @media screen and (min-width: 700px) {
+      #la-roche.la-roche .es-use {
+        background-image: url("assets/img/bg-use-min.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+      }
+
+      #la-roche.la-roche .es-use__content {
+        max-width: 58%;
+        padding: 1rem 20rem;
+        padding-right: 0;
+      }
+
+      #la-roche.la-roche .es-features {
+        background-image: url("assets/img/feat-ingr-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+      #la-roche.la-roche .es-features__content {
+        padding-left: 354px;
+      }
+
+      #la-roche.la-roche .es-effect {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      #la-roche.la-roche .es-effect__list {
+        max-width: 45%;
+        gap: 20px;
+        justify-content: flex-start;
+        margin-top: -60px;
+      }
+
+      #la-roche.la-roche .es-effect__image-wrap {
+        max-width: 45%;
+      }
+
+      #la-roche.la-roche .es-effect__item {
+        margin: 0 auto;
+        max-width: 34ch;
+        min-width: auto;
+        margin-bottom: 40px;
+      }
+
+      #la-roche.la-roche .es-effect__item-description {
+        font-size: 13px;
+        line-height: 1.4;
+      }
+
+      #la-roche.la-roche .es-effect__disclaimer {
+        font-family: Montserrat, sans-serif;
+        font-size: 8px;
+        font-weight: 200;
+      }
+    }
+
+    @media screen and (min-width: 800px) {
+      #la-roche.la-roche .es-features {
+        background-position: left;
+      }
+    }
+
+    @media screen and (min-width: 985px) {
+      #la-roche.la-roche .es-kv {
+        padding-top: 0;
+        padding-right: 0;
+        justify-content: space-between;
+      }
+
+      #la-roche.la-roche .es-kv__content {
+        padding-right: 0;
+        margin-left: 30px;
+      }
+
+      #la-roche.la-roche .es-kv__title {
+        font-size: clamp(1.5rem, 1.5rem + 0.6667vw, 1.8rem);
+      }
+
+      #la-roche.la-roche .es-kv__text {
+        padding-right: 0;
+      }
+
+      #la-roche.la-roche .es-kv__packshot img {
+        max-width: 180px;
+      }
+
+      #la-roche.la-roche .es-kv__photo {
+        width: 420px;
+        margin-right: -1px;
+      }
+
+      #la-roche.la-roche .es-effect__title {
+        margin-bottom: 0;
+      }
+
+      #la-roche.la-roche .es-effects__title {
+        margin-bottom: 50px;
+      }
+
+      #la-roche.la-roche .es-results {
+        background-position: left;
+      }
+
+      #la-roche.la-roche .es-results {
+        padding: 3.7rem 0 4rem 34rem;
+      }
+
+      #la-roche.la-roche .es-use__content {
+        max-width: 58%;
+        padding: 5rem 33rem;
+        padding-right: 0;
+      }
+
+      #la-roche.la-roche .es-features {
+        background-position: left;
+      }
+
+      #la-roche.la-roche .es-features__content {
+        padding: 2.3rem 0 4rem 24rem;
+        margin-top: -20px;
+      }
+
+      #la-roche.la-roche .es-features__description {
+        max-width: 433px;
+        margin: 0 auto;
+        line-height: 1.4;
+        font-size: 13px;
+        font-weight: 100;
+      }
+
+      #la-roche.la-roche .es-features__label-description {
+        display: block;
+        max-width: 350px;
+        margin: 0 auto;
+        padding: 10px 40px;
+        margin-bottom: 25px;
+      }
+
+      #la-roche.la-roche .es-cross {
+        margin-top: 120px;
+      }
+      
+      #la-roche.la-roche .es-cross__number {
+        font-size: clamp(5.375rem, 11.5972rem + 8.8889vw, 10.375rem);
+      }
+
+      #la-roche.la-roche .es-cross__name {
+        margin-top: -20px;
+        margin-bottom: 10px;
+        font-size: 31px;
+      }
+
+      #la-roche.la-roche .es-cross__name-subtitle {
+        display: block;
+        font-size: 22px;
+        max-width: 16ch;
+        margin-top: 0;
+        padding-top: 0;
+        text-transform: uppercase;
+      }
+
+      #la-roche.la-roche .es-cross__content--1 {
+        margin-top: -120px;
+        margin-left: 10px;
+      }
+
+      #la-roche.la-roche .es-cross__content--2 {
+        margin-top: 160px;
+        margin-right: 50px;
+      }
+
+      #la-roche.la-roche .es-cross__content--3 {
+        margin-top: -177px;
+        margin-left: 26px;
+      }
+
+      #la-roche.la-roche .es-cross__desc {
+        max-width: 23ch;
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+
+      #la-roche.la-roche .es-cross__single--1 {
+        top: 54px;
+        left: 104px;
+      }
+
+      #la-roche.la-roche .es-cross__single--2 {
+        top: 348px;
+        right: 20px;
+      }
+
+      #la-roche.la-roche .es-cross__single--3 {
+        bottom: -169px;
+        left: 69px;
+      }
+
+      #la-roche.la-roche .es-cross__single--1 img {
+        height: 600px;
+      }
+
+      #la-roche.la-roche .es-cross__single--2 img {
+        height: 419px;
+      }
+
+      #la-roche.la-roche .es-cross__single--3 img {
+        height: 380px;
+      }
+
+      #la-roche.la-roche .es-obligations {
+        margin-top: 250px;
+      }
+
+      #la-roche.la-roche .es-footer {
+        margin-top: 75px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="la-roche" class="la-roche">
+    <div class="es-kv__header">
+      <img class="es-kv__brand" src="./assets/img/la-roche-posay-logo.png" alt="La Roche Posay logo" />
+      <div class="es-kv__logo">
+        <img src="./assets/img/logo_NR1_marka_w_Polsce_2022-2023_prod-01-min.png"
+          alt="Nr 1 marka w Polsce w rekomendacjach dermatologów." />
+      </div>
+    </div>
+    <div class="es-kv">
+      <div class="es-kv__content">
+        <div class="es-kv__text">
+          <p class="es-kv__title">
+            <strong>Mela B3 <br /></strong>
+            <span>KONCENTRUOTAS<br />
+              SERUMAS NUO<br />
+              PIGMENTINIŲ <br />
+              PAKITIMŲ IR JŲ<br />
+              PASIKARTOJIMO<br /> SU SPF30
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="es-kv__packshot">
+        <img src="./assets/img/product-min.png" alt="Mela B3 Serum" />
+      </div>
+      <img src="./assets/img/kv-photo.png" alt="Przebarwienia, niejednolity koloryt i zmiany potrądzikowe"
+        class="es-kv__photo" />
+    </div>
+
+    <div class="es-effects">
+      <p class="es-effects__title">
+        <strong>KLINIKINIAIS TYRIMAIS<sup>1 </sup> ĮRODYTAS</strong><br />
+        VEIKSMINGUMAS<br /> VISŲ FOTOTIPŲ ODAI:<br />
+      </p>
+      <div class="es-effects__icons">
+        <div class="es-effects__single">
+          <img src="./assets/img/tick-icon.png" alt="zatikowany checkbox" />
+          <p class="es-effects__text">
+            Matomai<br />
+            išlygina spalvą
+          </p>
+        </div>
+
+        <div class="es-effects__single">
+          <img src="./assets/img/tick-icon.png" alt="zatikowany checkbox" />
+          <p class="es-effects__text">
+            Veiksmingai mažina net senus ir sunkiai pašalinamus pigmentinius
+            pakitimus
+          </p>
+        </div>
+
+        <div class="es-effects__single">
+          <img src="./assets/img/tick-icon.png" alt="zatikowany checkbox" />
+          <p class="es-effects__text">
+            Pastebimai mažina pigmentinių pakitimų kiekį, intensyvumą
+            ir dydį
+          </p>
+        </div>
+
+        <div class="es-effects__single">
+          <img src="./assets/img/tick-icon.png" alt="zatikowany checkbox" />
+          <p class="es-effects__text">
+            Užkerta kelią pigmentinių pakitimų pasikartojimui, garantuodamas ilgalaikius rezultatus (2)
+          </p>
+        </div>
+      </div>
+
+
+      <div class="es-features">
+        <div class="es-features__content">
+          <p class="es-features__title">
+            <strong>SUDEDAMOJI MEDŽIAGA, PADARIUSI PROVERŽĮ</strong><br />
+            DERMATOLOGIJOJE
+          </p>
+          <img class="es-features__logo" src="./assets/img/melasyl-logo.png" alt="Melasyl logotyp" />
+          <p class="es-features__disclaimer">DAUG KARTŲ PATENTUOTA</p>
+          <p class="es-features__label-description">
+            18 METŲ TYRIMŲ.<br />
+            IŠTIRTA 100 000 MOLEKULIŲ.<br />
+            DAUG KARTŲ PATENTUOTA.
+          </p>
+          <p class="es-features__description">
+            <strong>„Melasyl™“</strong> medžiaga sulaiko pernelyg didelį melanino kiekį prieš jam paliekant pėdsakus
+            ant odos ir
+            labai veiksmingai apsaugo nuo pigmentinių pakitimų. Sudedamosios medžiagos „Melasyl™“ veiksmingumas
+            patvirtintas klinikiniais tyrimais ir lyginamuoju tyrimu su 5 referencinėmis veikliosiomis sudedamosiomis
+            medžiagomis.
+          </p>
+        </div>
+      </div>
+
+      <div class="es-ingr">
+        <p class="es-ingr__title">VEIKLIOSIOS MEDŽIAGOS</p>
+
+        <div class="es-ingr__container">
+          <div class="es-ingr__single">
+            <div class="es-ingr__main es-ingr__main--1"></div>
+            <p class="es-ingr__desc">
+              Pasižymi stipriomis antioksidacinėmis ir priešuždegiminėmis savybėmis, todėl gali pastebimai mažinti
+              pigmentinius pakitimus.
+            </p>
+          </div>
+
+          <div class="es-ingr__single">
+            <div class="es-ingr__main es-ingr__main--2"></div>
+            <p class="es-ingr__desc">
+              Turi stipriai drėkinančių ir
+              lyginančių odą savybių.
+            </p>
+          </div>
+
+          <div class="es-ingr__single">
+            <div class="es-ingr__main es-ingr__main--3"></div>
+            <p class="es-ingr__desc">
+              Turi padedančių atkurti
+              hidrolipidų barjerą savybių.
+            </p>
+          </div>
+
+          <div class="es-ingr__single">
+            <div class="es-ingr__main es-ingr__main--4"></div>
+            <p class="es-ingr__desc">
+              Natūralus jūrų dumblių ekstraktas mažina pigmentinius pakitimus.
+            </p>
+          </div>
+
+          <div class="es-ingr__single">
+            <div class="es-ingr__main es-ingr__main--5"></div>
+            <p class="es-ingr__desc">
+              Švelniai nušveičia ir atkemša poras.
+            </p>
+          </div>
+
+          <div class="es-ingr__single">
+            <div class="es-ingr__main es-ingr__main--6"></div>
+            <p class="es-ingr__desc">
+              Šviesina, minkština ir lygina odą.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="es-results">
+        <p class="es-results__title">
+          <strong>INDIKACIJOS</strong>
+        </p>
+        <div class="es-results__content">
+          <div class="es-results__single">
+            <p class="es-results__text">
+              <strong>ĮSISENĖJĘ PIGMENTINIAI PAKITIMAI </strong>
+              taip pat: melazma, po uždegimų, saulės ir dėl amžiaus atsiradę pigmentiniai pakitimai.
+
+            </p>
+          </div>
+          <div class="es-results__single">
+            <p class="es-results__text"><strong>PAKITIMAI DĖL AKNĖS</strong></p>
+          </div>
+          <div class="es-results__single">
+            <p class="es-results__text">
+              <strong>NEVIENALYTĖ SPALVA</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="es-effect">
+        <div class="es-effect__list">
+          <p class="es-effect__title">
+            <span>VEIKSMINGUMAS<br /></span> PATVIRTINTA <br />
+            TYRIMAIS
+          </p>
+          <div class="es-effect__items">
+            <div class="es-effect__item">
+              <p class="es-effect__item-description">
+                <span class="es-effect__item-title"> PASAK 85%<sup>3</sup></span>
+                PASTEBIMAI SUMAŽINA SUNKIAI PAŠALINAMUS PIGMENTINIUS PAKITIMUS
+                PANAUDOJUS VOS 2 MĖNESIUS IR APSAUGO
+                NUO JŲ PASIKARTOJIMO<sup>(2)</sup>
+              </p>
+            </div>
+
+            <div class="es-effect__item">
+              <p class="es-effect__item-description">
+                <span class="es-effect__item-title"> PER 1 VALANDĄ </span>
+                PO PANAUDOJIMO SUSTIPRINA APSAUGINĮ ODOS BARJERĄ <sup>5</sup>
+              </p>
+            </div>
+
+            <div class="es-effect__item">
+              <p class="es-effect__item-description">
+                <span class="es-effect__item-title"> PER 4 VALANDAS </span>
+                PO PANAUDOJIMO INTENSYVIAI
+                ĮDRĖKINA ODĄ(3) IR IŠSAUGO DRĖGMĘ 24 VAL.<sup>5</sup>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="es-effect__image-wrap">
+          <div class="es-effect__image-labels">
+            <p class="es-effect__before-title">PRIEŠ</p>
+            <p class="es-effect__before-title">PO</p>
+          </div>
+          <img class="es-effect__image" src="./assets/img/before-after.png" alt="Serum przed i po" />
+          <p class="es-effect__disclaimer">
+            <sup>*</sup>Vidutiniai rezultatai po "Mela B3" serumo naudojimo, gauti praėjus 56 dienoms po naudojimo.
+            Rezultatai gali skirtis priklausomai nuo pradinės odos būklės.
+
+            <br /><sup>**</sup>
+            Vidutiniai rezultatai po "Mela B3" serumo naudojimo, gauti praėjus 84 dienoms po naudojimo. Rezultatai
+            gali
+            skirtis priklausomai nuo pradinės odos būklės.
+          </p>
+        </div>
+      </div>
+
+      <div class="es-use">
+        <div class="es-use__content">
+          <p class="es-use__title">NAUDOJIMO BŪDAS</p>
+          <ol>
+            <li>Tepkite serumą MELA B3 ant nuvalytos veido odos. Serumas tinka visų tipų odai, taip pat riebiai, į
+              aknę
+              linkusiai, jautriai odai. </li>
+            <li>
+              Norėdami veiksmingai šalinti pigmentinius pakitimus, nepamirškite kasdien naudoti apsaugą nuo UVA ir UVB
+              spindulių.
+            </li>
+            <li>
+              Norėdami pasiekti gerą poveikį, tepkite ryte ir vakare
+              ant veido, kaklo ir dekoltė zonos.
+
+            </li>
+            <li>
+              Taip pat išbandytas ant delnų odos. Venkite tiesioginio
+              sąlyčio su akimis.
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="es-cross__bg">
+        <div class="es-cross__main-title">
+          <p>
+            <strong>Veiksminga hiperpigmentacijos ir<br /> jos pasikartojimo prevencija</strong>
+          </p>
+        </div>
+        <div class="es-cross">
+          <div class="es-cross__single es-cross__single--1">
+            <img src="./assets/img/cross-1.png" alt="Mela B3 gel" />
+            <div class="es-cross__content es-cross__content--1">
+              <p class="es-cross__number">1</p>
+              <p class="es-cross__name">
+
+                <span class="es-cross__name-subtitle">MIKROLYGIU ŠVEIČIANTIS VALOMASIS GELIS </span>
+                <strong>"MeLA B3"</strong> <br />
+              </p>
+              <p class="es-cross__desc">
+                Sudėtyje yra švelniai šveičiančių dalių, todėl valo odą ir iš karto pastebimai išlygina jos struktūrą.
+              </p>
+              <a href="https://www.benu.lt/grozio-ir-odos-prieziura/veido-odos-prieziura/veido-valymo-priemones/la-roche-posay-mela-b3-sveic-valomasis-gelis-200ml"
+                target="_blank" class="es-cross__link">RINKTIS</a>
+            </div>
+          </div>
+
+          <div class="es-cross__single es-cross__single--2">
+            <div class="es-cross__content es-cross__content--2">
+              <p class="es-cross__number">2</p>
+              <p class="es-cross__name">
+                <span class="es-cross__name-subtitle">KONCENTRUOTAS SERUMAS
+                  „MELA B3“ NUO PIGMENTINIŲ
+                  PAKITIMŲ</span>
+              </p>
+              <p class="es-cross__desc">
+                Koncentruotas serumas veiksmingai įveikia pigmentinius pakitimus ir apsaugo nuo jų
+                pasikartojimo.<sup>4</sup>.
+              </p>
+              <a href="https://www.benu.lt/grozio-ir-odos-prieziura/veido-odos-prieziura/la-roche-posay-mela-b3-intensive-serumas-30ml"
+                target="_blank" class="es-cross__link">RINKTIS</a>
+            </div>
+            <img src="./assets/img/cross-2.png" alt="Mela B3 serum" />
+          </div>
+
+          <div class="es-cross__single es-cross__single--3">
+            <img src="./assets/img/cross-3.png" alt="anthelios" />
+            <div class="es-cross__content es-cross__content--3">
+              <p class="es-cross__number">3</p>
+              <p class="es-cross__name">
+                <strong>anthelios </strong> <br />
+                <span class="es-cross__name-subtitle">
+                  NEMATOMAS SKYSTIS „ANTHELIOS UV MUNE SPF 50+“
+                </span>
+              </p>
+              <p class="es-cross__desc">
+                Užtikrina veiksmingiausią apsaugą nuo kenksmingiausių UVA spindulių ir itin didelę apsaugą nuo UVB
+                spindulių.
+              </p>
+              <a href="https://www.benu.lt/odos-prieziura-ir-kosmetika/apsauga-nuo-saules/apsauga-nuo-saules/la-roche-posay-apsauginis-veido-fluidas-anthelios-uvmune-400-sp50-50-ml"
+                target="_blank" class="es-cross__link">RINKTIS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="es-obligations">
+        <p class="es-obligations__title">
+          <strong>la roche-posay</strong> ĮSIPAREIGOJIMAI
+        </p>
+        <div class="es-obligations__ctn">
+          <div class="es-obligations__single es-obligations__single--1">
+            <p class="es-obligations__text">
+              100% PRODUKTŲ IŠTIRTI<br />
+              DĖL ALERGIJOS SUKĖLIMO
+            </p>
+          </div>
+          <div class="es-obligations__single es-obligations__single--2">
+            <p class="es-obligations__text">
+              TIK ESMINĖS VEIKLIOSIOS SUDEDAMOSIOS <br />
+              MEDŽIAGOS IR OPTIMALI JŲ KONCENTRACIJA
+            </p>
+          </div>
+        </div>
+
+        <div class="es-obligations__ctn">
+          <div class="es-obligations__single es-obligations__single--3">
+            <p class="es-obligations__text">LAIKO TĖKMEI ATSPARIOS FORMULĖS</p>
+          </div>
+          <div class="es-obligations__single es-obligations__single--4">
+            <p class="es-obligations__text">
+              IŠBANDYTA SU LABAI JAUTRIA ODA
+            </p>
+          </div>
+        </div>
+
+        <div class="es-footer">
+          <p class="es-footer__text">
+            1. Klīniska testēšana 73 sieviešu grupā, pēc lietošanas 8 nedēļu garumā.
+          </p>
+          <p class="es-footer__text">
+            2. Klīniska testēšana 73 sieviešu grupā, 2 nedēļu pārtraukums pēc lietošanas 8 nedēļu garumā.
+          </p>
+          <p class="es-footer__text">
+            3. Aparāta pārbaude.
+          </p>
+          <p class="es-footer__text">
+            4. Patērētāju tests (pašvērtējums) klīniskas testēšanas laikā, 73 sievietes pēc pielietošanas 8 nedēļu
+            garumā.
+          </p>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
