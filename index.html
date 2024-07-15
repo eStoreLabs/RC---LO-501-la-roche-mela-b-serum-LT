@@ -161,7 +161,7 @@
     }
 
     #la-roche.la-roche .es-kv__title {
-      font-size: clamp(13.5px, 15px + 0.6667vw, 24px);
+      font-size: 22px;
       text-transform: uppercase;
       margin-bottom: 0;
       font-weight: 300;
@@ -192,7 +192,7 @@
     }
 
     #la-roche.la-roche .es-effects__title {
-      font-size: 16px;
+      font-size: 24px;
       text-align: center;
       text-transform: uppercase;
       font-weight: 300;
@@ -388,11 +388,12 @@
       margin-bottom: 48px;
     }
 
-    #la-roche.la-roche .es-ingr__main {
+    #la-roche.la-roche .es-ingr__main, 
+    #la-roche.la-roche .es-ingr__main--1 {
       background-repeat: no-repeat;
       background-position: center;
       background-size: 100%;
-      height: 240px;
+      height: 220px;
       padding: 8px;
       transition: background-size 300ms ease-in-out;
     }
@@ -403,6 +404,7 @@
 
     #la-roche.la-roche .es-ingr__main--1 {
       background-image: url("assets/img/ingr-1.png");
+   
     }
 
     #la-roche.la-roche .es-ingr__main--2 {
@@ -671,6 +673,11 @@
       margin: 20px 0;
       text-transform: none;
       transition: 0.5s ease;
+    }
+    #la-roche.la-roche .es-cross__single:hover {
+      background: transparent;
+      color: #fff;
+      outline: 0;
     }
 
     #la-roche.la-roche .es-obligations {
@@ -949,7 +956,7 @@
         background-position: left;
       }
 
-     
+    
       #la-roche.la-roche .es-use__content {
         max-width: 58%;
         padding: 80px 528px;
@@ -961,7 +968,7 @@
       }
 
       #la-roche.la-roche .es-features__content {
-        padding: 36.8px 0 64px 384px;
+        padding: 12.8px 0 9px 384px;
         margin-top: -20px;
       }
 
@@ -1011,7 +1018,7 @@
 
       #la-roche.la-roche .es-cross__content--2 {
         margin-top: 160px;
-        margin-right: 50px;
+        margin-right: -17px;
       }
 
       #la-roche.la-roche .es-cross__content--3 {
@@ -1093,8 +1100,8 @@
 
     <div class="es-effects">
       <p class="es-effects__title">
-        <strong>KLINIKINIAIS TYRIMAIS<sup>1 </sup> ĮRODYTAS</strong><br />
-        VEIKSMINGUMAS<br /> VISŲ FOTOTIPŲ ODAI:<br />
+        <strong>KLINIKINIAIS TYRIMAIS<sup>(1) </sup>ĮRODYTAS
+        VEIKSMINGUMAS</strong><br /> VISŲ FOTOTIPŲ ODAI:<br />
       </p>
       <div class="es-effects__icons">
         <div class="es-effects__single">
@@ -1124,7 +1131,7 @@
         <div class="es-effects__single">
           <img src="./assets/img/tick-icon.png" alt="" />
           <p class="es-effects__text">
-            Užkerta kelią pigmentinių pakitimų pasikartojimui, garantuodamas ilgalaikius rezultatus (2)
+            Užkerta kelią pigmentinių pakitimų pasikartojimui, garantuodamas ilgalaikius rezultatus<sup>(2)</sup> 
           </p>
         </div>
       </div>
@@ -1158,7 +1165,7 @@
 
       <div class="es-ingr__container">
         <div class="es-ingr__single">
-          <div class="es-ingr__main es-ingr__main--1"></div>
+          <div class="es-ingr__main--1"></div>
           <p class="es-ingr__desc">
             Pasižymi stipriomis antioksidacinėmis ir priešuždegiminėmis savybėmis, todėl gali pastebimai mažinti
             pigmentinius pakitimus.
